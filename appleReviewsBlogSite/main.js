@@ -39,3 +39,17 @@ function rotate() {
     var body = document.getElementById("body1");
     body.style.backgroundColor = "rgb(" + R + "," + G + "," + B + ")";
 }
+window.onload = ratingBarSetUp();
+
+function ratingBarSetUp() {
+    var response = document.getElementById("ratingResponse");
+    var ratingStars = new Array();
+    for (var i = 0; i < 5; i++) {
+        ratingStars[i] = document.getElementById("star" + (i + 1).toString());
+    }
+    for (var i = 0; i < 5; i++) {
+        ratingStars[i].onclick = function() {
+            response.innerHTML = "There's a time and place for everything, but not now!";
+        }
+    }
+}

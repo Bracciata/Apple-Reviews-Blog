@@ -31,9 +31,16 @@
                 <li>Apples are members of the rose family.</li>
                 <li>The science of apple growing is called pomology.</li>
                 <li>Honey Crisps are the most overrated apples in existence.</li>
-                <li>The largest apple ever picked weighed three pounds, two ounces(1.42kilograms).</li>
+                <li>The largest apple ever picked weighed three pounds, two ounces (1.42kilograms).</li>
             </ul>
         </p>
+    </div>
+    <div class="post">
+        <p>Care to rate the blog?</p>
+        <div class="rating">
+            <span id="star5">☆</span><span id="star4">☆</span><span id="star3">☆</span><span id="star2">☆</span><span id="star1">☆</span>
+        </div>
+        <p id="ratingResponse"></p>
     </div>
     <!--End programatic addition-->
 </body>
@@ -62,6 +69,23 @@
     canvas.wan {
         float: right;
         width: 15%;
+    }
+    
+    .rating {
+        unicode-bidi: bidi-override;
+        direction: rtl;
+    }
+    
+    .rating>span {
+        display: inline-block;
+        position: relative;
+        width: 1.1em;
+    }
+    
+    .rating>span:hover:before,
+    .rating>span:hover~span:before {
+        content: "\2605";
+        position: absolute;
     }
 </style>
 
