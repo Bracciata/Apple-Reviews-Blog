@@ -6,35 +6,51 @@
     <title>Apple Reviews Blog</title>
 </head>
 
-<body class="body1" id="body1">
-    <canvas id="canvas1" class="wan">
-		</canvas>
+<body class="body1" id="body1">		
+
+	<!--Canvas & Links to other pages-->
+	<div class="rightSide">
+		<canvas id="canvas1" class="wan">
+		</canvas>   
+		</br> 
+		<div class="links">
+			<p>Other pages:</p>
+			<a class="pageLink" href="US.html">Who we are</br>我们是谁</a>
+		</div>
+	</div>		
+
+		
     <h1>
         <p class="title">Apple Reviews Blog</p>
     </h1>
+
     <!--Probably add posts from a file programmaticly here-->
     <div class="post">
         <p>Coming soon to a server near you: The McIntosh review!</br>
             <h1>𠥪𠥪𠥪𠥪𠥪</h1>
-            </br>There's a time and place for everything, but not now!</p>
+            </br>Do you eat fruit? Do you hate doctors? Do you have an apple on the back of your phone? Are you a partaker of western culture? If you answered yes to any of these questions we have the perfect blog for you: Apple Reviews! Ask your parent's permission before heading to applereviews.blog</p>
     </div>
-    </br>
+    </br>	
+    <!--End programatic addition example-->
     <div class="post">
         <p>Example of a previous post:</br>
             2,500 varieties of apples are grown in the United States. 7,500 varieties of apples are grown throughout the world.
         </p>
     </div>
+    </br>
     <div class="post">
         <p>Apple Facts:
             <ul>
                 <li>Apple seeds contain a small amount of cyanide.</li>
+                <li>It takes 40 apples to obtain a lethal dose of cyanide.</li>
                 <li>Apples are members of the rose family.</li>
                 <li>The science of apple growing is called pomology.</li>
-                <li>Honey Crisps are the most overrated apples in existence.</li>
                 <li>The largest apple ever picked weighed three pounds, two ounces (1.42kilograms).</li>
             </ul>
         </p>
     </div>
+    </br>
+	<!--Rating section-->
     <div class="post">
         <p>Care to rate the blog?</p>
         <div class="rating">
@@ -42,7 +58,7 @@
         </div>
         <p id="ratingResponse"></p>
     </div>
-    <!--End programatic addition-->
+	</br>
 </body>
 <script src="main.js"></script>
 <style>
@@ -59,19 +75,20 @@
     .post {
         border-style: double;
         border-width: 5px;
-        margin-left: 2.5%;
+        margin-left: 1.5%;
         font-family: "Comic Sans MS";
         width: 75%;
         padding-left: 5px;
+        padding-right: 5px;
         background-color: #FFFFFF;
     }
     
     canvas.wan {
-        float: right;
-        width: 15%;
+        width: 100%;
     }
     
     .rating {
+		cursor:default;
         unicode-bidi: bidi-override;
         direction: rtl;
     }
@@ -87,6 +104,24 @@
         content: "\2605";
         position: absolute;
     }
+	.rightSide{        
+		float: right;
+        width: 20%;
+		height: 100%;
+	}
+	.links{
+	    border-style: double;
+        border-width: 5px;
+        font-family: "Comic Sans MS";
+        width: 85%;
+		height:15%;
+        padding-left: 5px;
+        padding-right: 5px;
+        background-color: #FFFFFF;
+	}
+	a.pageLink{
+		text-align: right;
+	}
 </style>
 
 </html>

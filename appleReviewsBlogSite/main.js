@@ -6,6 +6,7 @@ var canvas = document.getElementById("canvas1");
 canvas.height = canvas.width;
 var ctx = canvas.getContext("2d");
 
+
 var imgChineseSymbol = document.createElement("img");
 imgChineseSymbol.src = "Assets/tao.png";
 var imgApple = document.createElement("img");
@@ -39,6 +40,7 @@ function rotate() {
     var body = document.getElementById("body1");
     body.style.backgroundColor = "rgb(" + R + "," + G + "," + B + ")";
 }
+
 window.onload = ratingBarSetUp();
 
 function ratingBarSetUp() {
