@@ -6,20 +6,20 @@
     <title>Apple Reviews Blog</title>
 </head>
 
-<body class="body1" id="body1">		
+<body class="body1" id="body1">
 
-	<!--Canvas & Links to other pages-->
-	<div class="rightSide">
-		<canvas id="canvas1" class="wan">
-		</canvas>   
-		</br> 
-		<div class="links">
-			<p>Other pages:</p>
-			<a class="pageLink" href="US.html">Who we are</br>我们是谁</a>
-		</div>
-	</div>		
+    <!--Canvas & Links to other pages-->
+    <div class="rightSide">
+        <canvas id="canvas1" class="wan">
+		</canvas>
+        </br>
+        <div class="links">
+            <p>Other pages:</p>
+            <a class="pageLink" href="US.html">Who we are</br>我们是谁</a>
+        </div>
+    </div>
 
-		
+
     <h1>
         <p class="title">Apple Reviews Blog</p>
     </h1>
@@ -28,9 +28,10 @@
     <div class="post">
         <p>Coming soon to a server near you: The McIntosh review!</br>
             <h1>𠥪𠥪𠥪𠥪𠥪</h1>
-            </br>Do you eat fruit? Do you hate doctors? Do you have an apple on the back of your phone? Are you a partaker of western culture? If you answered yes to any of these questions we have the perfect blog for you: Apple Reviews! Ask your parent's permission before heading to applereviews.blog</p>
+            </br>Do you eat fruit? Do you hate doctors? Do you have an apple on the back of your phone? Are you a partaker of western culture? If you answered yes to any of these questions we have the perfect blog for you: Apple Reviews! Ask your parent's
+            permission before heading to applereviews.blog</p>
     </div>
-    </br>	
+    </br>
     <!--End programatic addition example-->
     <div class="post">
         <p>Example of a previous post:</br>
@@ -50,15 +51,15 @@
         </p>
     </div>
     </br>
-	<!--Rating section-->
+    <!--Rating section-->
     <div class="post">
         <p>Care to rate the blog?</p>
-        <div class="rating">
+        <div class="rating" align="left">
             <span id="star5">☆</span><span id="star4">☆</span><span id="star3">☆</span><span id="star2">☆</span><span id="star1">☆</span>
         </div>
         <p id="ratingResponse"></p>
     </div>
-	</br>
+    </br>
 </body>
 <script src="main.js"></script>
 <style>
@@ -88,14 +89,14 @@
     }
     
     .rating {
-		cursor:default;
+        cursor: default;
         unicode-bidi: bidi-override;
         direction: rtl;
     }
     
     .rating>span {
         display: inline-block;
-        position: relative;
+        position: left;
         width: 1.1em;
     }
     
@@ -104,24 +105,27 @@
         content: "\2605";
         position: absolute;
     }
-	.rightSide{        
-		float: right;
+    
+    .rightSide {
+        float: right;
         width: 20%;
-		height: 100%;
-	}
-	.links{
-	    border-style: double;
+        height: 100%;
+    }
+    
+    .links {
+        border-style: double;
         border-width: 5px;
         font-family: "Comic Sans MS";
         width: 85%;
-		height:15%;
+        height: 15%;
         padding-left: 5px;
         padding-right: 5px;
         background-color: #FFFFFF;
-	}
-	a.pageLink{
-		text-align: right;
-	}
+    }
+    
+    a.pageLink {
+        text-align: right;
+    }
 </style>
 
 </html>
