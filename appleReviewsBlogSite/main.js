@@ -41,17 +41,17 @@ function rotate() {
     body.style.backgroundColor = "rgb(" + R + "," + G + "," + B + ")";
 }
 
-window.onload = ratingBarSetUp();
-
-function ratingBarSetUp() {
-    var response = document.getElementById("ratingResponse");
-    var ratingStars = new Array();
-    for (var i = 0; i < 5; i++) {
-        ratingStars[i] = document.getElementById("star" + (i + 1).toString());
-    }
-    for (var i = 0; i < 5; i++) {
-        ratingStars[i].onclick = function() {
-            response.innerHTML = "There's a time and place for everything, but not now!";
+function ratingStarClick(clicked_Id) {
+    var numbStar = clicked_Id.substring(clicked_Id.length - 1, clicked_Id.length);
+    for (i = 1; i < 6; i++) {
+        var id = "star" + i;
+        var star = document.getElementById(id);
+        if (i <= numbStar) {
+            star.innerHTML = "\u2605";
+            console.warn(i);
+        } else {
+            star.innerHTML = "☆";
         }
     }
+    document.getElementById("ratingResponse").innerHTML = "There is a time and place for everything but not now!";
 }

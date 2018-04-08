@@ -55,7 +55,8 @@
     <div class="post">
         <p>Care to rate the blog?</p>
         <div class="rating" align="left">
-            <span id="star5">☆</span><span id="star4">☆</span><span id="star3">☆</span><span id="star2">☆</span><span id="star1">☆</span>
+            <span id="star5" onclick="ratingStarClick(this.id)">☆</span><span id="star4" onclick="ratingStarClick(this.id)">☆</span><span id="star3" onclick="ratingStarClick(this.id)">☆</span><span id="star2" onclick="ratingStarClick(this.id)">☆</span>
+            <span id="star1" onclick="ratingStarClick(this.id)">☆</span>
         </div>
         <p id="ratingResponse"></p>
     </div>
@@ -113,7 +114,7 @@
     }
     
     .links {
-    	position: fixed;
+        position: fixed;
         border-style: double;
         border-width: 5px;
         font-family: "Comic Sans MS";
